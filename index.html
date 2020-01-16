@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Personal Webpage</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2559bbbe7a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div><img src="/default.png" alt="logo" class="logo" /></div>
+
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="top" class="container-2">
+      <div class="section">
+        <div class="col-1">
+          <div class="col-1-1">
+            <h1 class="welcome">Welcome to my Webpage</h1>
+            <h2 class="Hi">Hello,</h2>
+            <h2 class="name">I AM Hasan</h2>
+            <h2 class="profession-1">I AM A WEB-DEVELOPER & IT-SPECIALIST</h2>
+          </div>
+        </div>
+        <div id="About" class="col-2">
+          <div class="col-2-1">
+            <h3 class="Me">About Me</h3>
+            <h4 class="my-name">Hasan Özgan</h4>
+            <p class="profession">Web-Developer & IT-Specialist</p>
+            <p>
+              Hi, <br />
+              I am a developer and IT specialist based in Leipzig, Germany. I
+              have specialized in IT fields such as security, networking,
+              engineering and development in the last 10 years. And I have now
+              taken the path of a web developer, to bring ideas and the future
+              to you.
+            </p>
+          </div>
+          <img class="pic" src="/Hasan Özgan.png" alt="" />
+        </div>
+
+        <div id="Services" class="col-3">
+          <h3 class="col-3-1">Services</h3>
+
+          <div class="services-1">
+            <h5 class="services-2">Web Design</h5>
+            Got a vision or idea? I bring it to life with the latest
+            technologies and best tools.
+          </div>
+          <br />
+          <div class="services-3">
+            <h5 class="services-4">Development</h5>
+            Development and integration, Agile Software Development, front and
+            back-end development.
+          </div>
+          <br />
+          <div class="services-5">
+            <h5 class="services-6">Consulting</h5>
+            IT infrastructure, system and network setup and development.
+          </div>
+          <br />
+          <div class="services-7">
+            <h5 class="services-8">IT Support</h5>
+            Network maintenance, system troubleshooting, software maintenance
+            and more...
+          </div>
+        </div>
+      </div>
+      <div id="Contact" class="col-4">
+        <h1>Contact Me</h1>
+        <div class="container-5">
+          <form
+            action="https://mailthis.to/gibatof811@oncloud.ws"
+            method="POST"
+          >
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              rows="4"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // from https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
+        });
+      });
+    </script>
+    <footer>
+      <a class="footer-link" href="https://www.instagram.com"
+        ><i class="fas fa-camera fa-2x"></i
+      ></a>
+
+      <a class="footer-link" href="#"
+        ><i class="fab fa-facebook-f fa-2x"></i
+      ></a>
+
+      <a class="footer-link" href="https://www.linkedin.com/in/HasanÖzgan"
+        ><i class="fab fa-linkedin-in fa-2x"></i
+      ></a>
+      <a class="footer-link" href="https://twitter.com/?lang=en"
+        ><i class="fab fa-twitter fa-2x"></i
+      ></a>
+
+      <a
+        class="footer-link"
+        href="https://github.com/Leipzig-1453/My-Personal-Webpage.git"
+        ><i class="fab fa-github fa-2x"></i
+      ></a>
+    </footer>
+  </body>
+</html>
